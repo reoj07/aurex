@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="320" viewBox="0 0 480 320">
+  <rect width="480" height="320" rx="24" fill="#1f2733"/>
+  <rect x="28" y="28" width="424" height="264" rx="18" fill="#273242" stroke="#3a4a60"/>
+  <text x="48" y="74" fill="#f4f7fb" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">Boss K Bank Transfer Receipt</text>
+  <text x="48" y="116" fill="#9fb0c7" font-family="Segoe UI, Arial, sans-serif" font-size="18">Reference: PHP-ADMIN-0526</text>
+  <text x="48" y="152" fill="#9fb0c7" font-family="Segoe UI, Arial, sans-serif" font-size="18">Sender: Ian Test Account</text>
+  <text x="48" y="188" fill="#9fb0c7" font-family="Segoe UI, Arial, sans-serif" font-size="18">Amount: PHP 3,000.00</text>
+  <text x="48" y="224" fill="#9fb0c7" font-family="Segoe UI, Arial, sans-serif" font-size="18">Time: 2026-05-03 07:30</text>
+  <text x="48" y="268" fill="#3be0b2" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700">PAID</text>
+</svg>
