@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Mobile-first crypto exchange web application with centralized market and chart configuration."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Sora:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>AURX Exchange Device Monitoring</title>
+    <link rel="stylesheet" href="./assets/common.css" />
+    <link rel="stylesheet" href="./assets/pages/security-devices.css" />
+    <script defer src="./assets/common.js"></script>
+    <script defer src="./assets/pages/security-devices.js"></script>
+  </head>
+  <body data-static-route="/security/devices" data-page="security-devices">
+    <div id="root">
+      <div class="app-shell">
+        <div class="screen">
+          <header class="page-title-row">
+            <div class="page-title-side left">
+              <button type="button" class="icon-button ghost">
+                <svg
+                  viewBox="0 0 24 24"
+                  class="ui-icon icon-back"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M15 6l-6 6 6 6"></path>
+                </svg>
+              </button>
+            </div>
+            <h1>Device Monitoring</h1>
+            <div class="page-title-side right"></div>
+          </header>
+          <section class="security-section-nav">
+            <a
+              class="security-section-link"
+              href="./security-password.html"
+              data-discover="true"
+              ><svg
+                viewBox="0 0 24 24"
+                class="ui-icon icon-security-password"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path
+                  d="M8 11V8.8a4 4 0 118 0V11M7 11h10v8H7zM12 14.5v2"
+                ></path></svg
+              ><span>Login Password</span></a
+            ><a
+              class="security-section-link"
+              href="./security-verification.html"
+              data-discover="true"
+              ><svg
+                viewBox="0 0 24 24"
+                class="ui-icon icon-security-verification"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path
+                  d="M12 4l6 2.7v4.8c0 4.1-2.5 7.7-6 8.5-3.5-.8-6-4.4-6-8.5V6.7zm-2 7.1l1.5 1.5 3.5-3.5"
+                ></path></svg
+              ><span>Identity Verification</span></a
+            ><a
+              aria-current="page"
+              class="security-section-link active active"
+              href="./security-devices.html"
+              data-discover="true"
+              ><svg
+                viewBox="0 0 24 24"
+                class="ui-icon icon-security-devices"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path
+                  d="M6 7.5A2.5 2.5 0 018.5 5h7A2.5 2.5 0 0118 7.5v8a2.5 2.5 0 01-2.5 2.5h-7A2.5 2.5 0 016 15.5zM9 19h6M10 8.5h4M9 12h6"
+                ></path></svg
+              ><span>Device Monitoring</span></a
+            >
+          </section>
+          <section class="profile-page-hero security-section-hero slate">
+            <div class="security-section-icon-wrap">
+              <svg
+                viewBox="0 0 24 24"
+                class="ui-icon icon-security-devices"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path
+                  d="M6 7.5A2.5 2.5 0 018.5 5h7A2.5 2.5 0 0118 7.5v8a2.5 2.5 0 01-2.5 2.5h-7A2.5 2.5 0 016 15.5zM9 19h6M10 8.5h4M9 12h6"
+                ></path>
+              </svg>
+            </div>
+            <span>Session Review</span>
+            <h2>Inspect trusted devices and active sessions.</h2>
+            <p>
+              Confirm current device status and identify sessions that should be
+              revoked.
+            </p>
+          </section>
+          <section class="security-highlight-grid">
+            <article class="security-highlight-card slate">
+              <span>Last sign-in</span><strong>Today, 10:42 AM</strong>
+            </article>
+            <article class="security-highlight-card slate">
+              <span>Trusted devices</span><strong>1 device remembered</strong>
+            </article>
+          </section>
+          <section class="security-card-stack">
+            <article class="security-detail-card subsection-card">
+              <div>
+                <span>Current device</span
+                ><strong>Windows desktop active</strong>
+              </div>
+              <svg
+                viewBox="0 0 24 24"
+                class="ui-icon icon-chevron-right"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M9 6l6 6-6 6"></path>
+              </svg>
+            </article>
+            <article class="security-detail-card subsection-card">
+              <div>
+                <span>Other sessions</span
+                ><strong>No additional sessions detected</strong>
+              </div>
+              <svg
+                viewBox="0 0 24 24"
+                class="ui-icon icon-chevron-right"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M9 6l6 6-6 6"></path>
+              </svg>
+            </article>
+            <article class="security-detail-card subsection-card">
+              <div>
+                <span>Alert mode</span
+                ><strong>New-device alerts enabled</strong>
+              </div>
+              <svg
+                viewBox="0 0 24 24"
+                class="ui-icon icon-chevron-right"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M9 6l6 6-6 6"></path>
+              </svg>
+            </article>
+          </section>
+          <section class="security-tip-card">
+            <strong>Why this matters</strong>
+            <p>
+              Keeping this control updated reduces account recovery risk and
+              improves withdrawal protection.
+            </p>
+            <ul class="security-checklist">
+              <li>Review sessions after using public networks</li>
+              <li>Remove devices you no longer use</li>
+            </ul>
+          </section>
+        </div>
+        <nav class="bottom-nav nav-count-4" aria-label="Primary navigation">
+          <a class="nav-item" href="./index.html" data-discover="true"
+            ><svg
+              viewBox="0 0 24 24"
+              class="ui-icon icon-home"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M4 11l8-7 8 7v9H4z"></path></svg
+            ><span>Home</span></a
+          ><a class="nav-item" href="./markets.html" data-discover="true"
+            ><svg
+              viewBox="0 0 24 24"
+              class="ui-icon icon-markets"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M5 17.5l4.2-4.5 3.2 2.7 5.6-7.2"></path>
+              <path d="M15.7 8.5H18v2.3"></path></svg
+            ><span>Markets</span></a
+          ><a class="nav-item" href="./futures.html" data-discover="true"
+            ><svg
+              viewBox="0 0 24 24"
+              class="ui-icon icon-futures"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M5.5 8.5h9"></path>
+              <path d="M11.5 5.5l3 3-3 3"></path>
+              <path d="M18.5 15.5h-9"></path>
+              <path d="M12.5 12.5l-3 3 3 3"></path></svg
+            ><span>Trade</span></a
+          ><a class="nav-item" href="./assets.html" data-discover="true"
+            ><svg
+              viewBox="0 0 24 24"
+              class="ui-icon icon-assets"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path
+                d="M4.5 8.5h13a2 2 0 012 2v7a2 2 0 01-2 2h-13a2 2 0 01-2-2v-7a2 2 0 012-2z"
+              ></path>
+              <path d="M4.5 10.5h13"></path>
+              <path d="M14.5 14h3"></path>
+              <path d="M7 8.5V7a1.5 1.5 0 011.5-1.5h7"></path></svg
+            ><span>Assets</span></a
+          >
+        </nav>
+      </div>
+    </div>
+  </body>
+</html>

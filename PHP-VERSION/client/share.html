@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Mobile-first crypto exchange web application with centralized market and chart configuration."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Sora:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>AURX Exchange Share With Friends</title>
+    <link rel="stylesheet" href="./assets/common.css" />
+    <link rel="stylesheet" href="./assets/pages/share.css" />
+    <script defer src="./assets/common.js"></script>
+    <script defer src="./assets/pages/share.js"></script>
+  </head>
+  <body data-static-route="/share" data-page="share">
+    <div id="root">
+      <div class="app-shell">
+        <div class="screen share-friends-screen">
+          <header class="page-title-row">
+            <div class="page-title-side left">
+              <button type="button" class="icon-button ghost">
+                <svg
+                  viewBox="0 0 24 24"
+                  class="ui-icon icon-back"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M15 6l-6 6 6 6"></path>
+                </svg>
+              </button>
+            </div>
+            <h1>Share With Friends</h1>
+            <div class="page-title-side right"></div>
+          </header>
+          <section class="share-invite-stage">
+            <div class="share-invite-qr-shell">
+              <a
+                class="share-invite-qr-card"
+                href="https://bossk.exchange/register?code=C5BIU8SUL000"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Open invitation link"
+                ><img
+                  class="share-invite-qr-image"
+                  alt="Invitation QR code"
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAYAAABccqhmAAAP7UlEQVR4AeyZy5HlyA1FK8YCLWWA/LdIBmgpD6TGTHGCXZG44EsQZH6OQqlXneDF50BxN/nH//gPBCCwLYE/vvgPBCCwLQEMYNvVMzgEvr4wAP5fAIFNCdjYGIBR4EBgUwIYwKaLZ2wIGAEMwChwILApAQxg08Uz9t4EjulDA/jHP//1tco5hm79RjO2NFfuMnkjrYpf6a31jcoZxVr57rhTdVV+pbNYRmv6WY6aMzQAJSYGAQjMTQADmHt/dA+BFAEMIIUPMQTmI3DuGAM40+BvCGxGAAPYbOGMC4EzAQzgTIO/IbAZgZQB/Pc///4a7Yy2v4jPTP1GvapnMaVVOosphiqv0llMaVXMtKMd1e859vPvlAH8TMa/IQCBuQhgAHPti24hcCsBDOBWnCSDwFwEMIC59kW3EOgm0BJiAC0q3EFgEwIYwCaLZkwItAiUGYA931Sc1hBP3FXMEuXMzKVy9+bNPH1V9GNzqLxRzPQVJ6rbG6/otcwAKpolJwQg0EfAU2EAHhnuIbABAQxggyUzIgQ8AhiAR4Z7CGxAAAPYYMmMuDcBNT0GoOgQg8DiBDCAxRfMeBBQBDCAbzrRG/f3Z80fpW0KLl5m8iqteodWrSmdxZRWxVSvFrPc3snkVdpdYhjALptmzi0JRENjABEh4hBYmAAGsPByGQ0CEQEMICJEHAILE8AAFl4uo+1N4Mr0GMAVSnwDgUUJYADfi/WemY77788+/rFnrN6jikU5j75bvypv6/vjLqqp8iqt0kUxlffo2/uNcu8QxwB22DIzQsAhgAE4YLiGwMwErvaOAVwlxXcQWJAABrDgUhkJAlcJYABXSfEdBBYkgAEsuFRG2pvAJ9OXGYB6nsnEPhnuk2+revKeoI77T3o8f3vovd/zt0/97fVi96oHi6ujdtOrs5yqp0zMclecTE+etswAvILcQwAC4xDAAMbZBZ1A4HECGMDjyCkIgToCn2bGAD4lxvcQWIgABrDQMhkFAp8SwAA+Jcb3EFiIAAaw0DIZZW8CPdOnDEC9wb4V64Fgmqhf+8Y7Shu9ByutV+/Kvaqr9EqnerVYr1bpLGa5vWNx73ia415xULFDP9Kv6lfFUgagEhODAATGJ4ABjL8jOoRAGQEMoAwtiSHwHIHeShhALzl0EFiAAAawwBIZAQK9BDCAXnLoILAAgdAAvCeWGe/VvqJ51JOPyqt0FlN1Le4dpbOYp7N71a+KWV51erVKZ7GKmpbTcnvH4rOcqE9vRrsPDcA+4kAAAmsSwADW3CtTQeASAQzgEiY+gsCaBDCANffKVJsQyI6JAWQJoofAxAQwgImXR+sQyBIIDcCejbyTKe7lHPVezaqeYZQuiqm8ESelVbEor4pH8zwdV71GsUyvKrfKq3SZmKoZGoASE4MABN4jcEdlDOAOiuSAwKQEMIBJF0fbELiDAAZwB0VyQGBSAhjApIuj7b0J3DU9BnAXSfJAYEICGMCES6NlCNxFIDSAqjdjlTczXG9epYti6o020qpZM3mVVtXMxKpqqrwqFrFX8QwHpVX9Kp3FVL8qZlrvhAbgCbmHAATeIXBnVQzgTprkgsBkBDCAyRZGuxC4kwAGcCdNckFgMgIYwGQLo929Cdw9PQZwN1HyQWAiAikD6H16MD6Z5xDTe6c3r9JFMa8Xu4+0Km76iqNqqp1mYqpmFFN1K/hYTtWTxd84qicVU72mDEAlJgYBCIxPAAMYf0d0CIE/CVT8DwZQQZWcEJiEAAYwyaJoEwIVBDCACqrkhMAkBDCASRZFm3sTqJo+NAD1vKBiUcPqaWfEmJpH9at0FstoTf/kUfuOYqpPxcBiKrfFvaN0FlM9qZhp1fH6ie5VzapYaABVhckLAQi8TwADeH8HdACB1whgAK+hpzAErhGo/AoDqKRLbggMTgADGHxBtAeBSgIYQCVdckNgcAIYwOALor29CVRPnzIA9a6ZaVy9sUZ5e7VKZ7ERZ41YeHE1i83qHaXLxLx6x703h90f37R+La5OS3PcKV1VLGJYUTdlABUNkRMCEHiOAAbwHGsqQWA4AhjAcCuhIQj8ReCJ/8UAnqBMDQgMSgADGHQxtAWBJwhgAE9QpgYEBiVQZgDRk8bx3NL6zbBSdVu1jjuls5jq6cjR+jVtxWnVOt+pmmoWFTvnv/Nv1WsmpmaJYqpupFVxxe2sa/2telKxVq7jrswAjgL8QgAC4xLAAMbdDZ1BoJwABlCOmAIQGJcABjDubuhsUwJPjo0BPEmbWhAYjAAGMNhCaAcCTxJIGYB60ohiVUOquuqpROks1tuvaSuOmsViqmbvLJZXnd68qleLqbwW947SWUzN4uW0e9OqY994R+neiKUM4I2GqQmBlQk8PRsG8DRx6kFgIAIYwEDLoBUIPE0AA3iaOPUgMBABDGCgZdDK3gTemB4DeIM6NSEwCAEMYJBF0AYE3iCQMgD1jpoZRuX13leP+15tpl+lVf1EMZU3iqncB6vWr9Jlaiqtqmkxpc3EWvMfd1a39/T2dNT2flVeT2P3SpcyAJWYGAQgcJ3AW19iAG+Rpy4EBiCAAQywBFqAwFsEMIC3yFMXAgMQwAAGWAIt7E3gzekxgDfpUxsCLxNYzgDs2cM7b7D2ejnue3s69D2/vTXf0qkZe5/qTKfmUTWjmMqrYtaTOr1apVvOANSwxCAAgd8JYAC/8+BfEHiUwNvFMIC3N0B9CLxIAAN4ET6lIfA2AQzg7Q1QHwIvEsAAXoRP6b0JjDB9ygDUc4h6zrBY1fCW2zuZmmrWqrzeHHafqWl672TmzGjVPF6vdq90Ucz03lFaT3Pc92oVP4upvBb3jtKlDEAlJgYBCIxPAAMYf0d0CIEyAhhAGVoSQ8AnMEoEAxhlE/QBgRcIYAAvQKckBEYhgAGMsgn6gMALBFIGcDx7tH6jWVqa4857zrD7KK99450jf+s3ylsVb/Vy3Kmaxzfer9L2xjyux73K6/Vp94f+7l/Vj8VUPYt7R+ksZjN5x+Le8epV3qcMoLIxckMAAvUEMIB6xlSAwLAEMIBhV0NjEKgngAHUM6YCBP4mMNofGMBoG6EfCDxIAAN4EDalIDAaAQxgtI3QDwQeJBAagPeeafdVfVpu70Q1PZ3dR9reuOX2Tm/OSOe9JR/3Xj92r3JbvPeovEdfrd/eeqbrrWl9mN47Kq+nOe4td+vYncqbiR21W78qb2gASkwMAhCYmwAGMPf+6B4CKQIYQAofYgjMTQADmHt/dD8JgVHbxABG3Qx9QeABAhjAA5ApAYFRCYQGYE8XPScaWOVU2tYzx/lO5VWxc47W36qnN2KtHs93qifFoVdnOZX23NvPv03be37m+uTfVf2qHnprWk6lVfyULjQAJSYGAQjEBEb+AgMYeTv0BoFiAhhAMWDSQ2BkAhjAyNuhNwgUE8AAigGTfm8Co0+PAYy+IfqDQCGBlAHY04R31LOExTyd3at5TauO6b2j8mZiqp8ob0Yb5fbiHh+79zR2b/HeY/qKo/hFMdWP0kYMlLa3puVUWtWT0qUMQCUmBgEIjE8AAxh/R3Q4KYEZ2sYAZtgSPUKgiAAGUASWtBCYgQAGMMOW6BECRQQwgCKwpN2bwCzTYwCzbIo+IVBAoMwA1LukxdQs9ubpHaWzmKeze4t7x+LqWM9PH9WPN0flveonE4t6VtyVVuksprSZmOX2TiZvL2NVs8wAVFFiEIDAGAQwgDH2QBcLEZhpFAxgpm3RKwRuJoAB3AyUdBCYiQAGMNO26BUCNxPAAG4GSrq9Ccw2fZkB9D5ZmE5B9J5Xqu9VT1UxNZNx6j2qX5VT6TIxNafF3uhJzaP6sZjS2jzeUboo5uW0e6UtMwBVlBgEIDAGAQxgjD3QBQReIYABvIKdoisSmHEmDGDGrdEzBG4igAHcBJI0EJiRAAYw49boGQI3EUgZgD15eMeeH9RR/ffqLKfXj91bvPeY3jsqp6c57pVWxRSjKHbUbv1G2t64miWKqZpK25rv6p3K24qd767W+PmdmjOK/cx1/ve5t59/pwzgZzL+DQEIzEUAA5hrX3QLgVsJYAC34iQZBOYigAHMtS+6HZDAzC1hADNvj94hkCSAASQBIofAzAQwgJm3R+8QSBIIDSB6f/TiUV+ezu4jrYqb3jtKd343bf3t5bT71vfHnappseO7J3+trncyfXg57d44eSeqafqK4/XzyX3rW9Vr6/vjLsPhyNH6Vf2EBqDExCAAgbkJYABz74/uIZAigAGk8CGGwNwEMIC590f3LxJYoTQGsMIWmQECnQQwgE5wyCCwAoHQAKKniZnimYWpOTN5lbb1pHP1rjdvr8766mVkWnVUT1Wx3lmq+rG8FT2FBmCFORCAwO8EVvkXBrDKJpkDAh0EMIAOaEggsAoBDGCVTTIHBDoIYAAd0JDsTWCl6TGAlbbJLBD4kEDKANTTzVuxD+cv/zzioBqoePZR9aKY6sdialaLV5yo5964mqU3p+kUA4urU9FTygBUs8QgAIHxCWAA4++IDgcisForGMBqG2UeCHxAAAP4ABafQmA1AhjAahtlHgh8QAAD+AAWn+5NYMXpMYAVt8pMELhIoMwA1HtnJnZxrkc/y7zPKq2KRQwVAKVVOtWPxVRei3tH1ayMqX4zMdWzx+DKvcqr+lW6MgNQRYlBAAJjEMAAxtgDXQxOYNX2MIBVN8tcELhAAAO4AIlPILAqAQxg1c0yFwQuEMAALkDik70JrDw9BnBxu+qZRj3BZGKqNdVPFFN5VSyaRdVVeZXOYhmt6b3Tm1fpLObVs3uLeyfi6+ky9xhAhh5aCExOAAOYfIG0D4EMAQwgQw/t8gRWHxADWH3DzAcBQQADEHAIQWB1AhjA6htmPggIAhjANxx7olFHPdF8p7j9J1NTadWcagils5iqqfKOGuvtq4pDRV4MoHfL6CCwAAEMYIElMgIEeglgAL3k0EFgAQIYwAJLZIT7CeySEQPYZdPMCYEGAQygAYUrCOxCAAPYZdPMCYEGgTIDsHfhitOY4fUrNWfUXK9WvQlbrDdvry6a03ryTqRVcS+n3SudilnM9N6x+CqnzABWAcQcEFiZAAaw8naZDQIBAQwgAEQYAisTwABW3i6zfUxgNwEGsNvGmRcCJwIYwAkGf0JgNwIpA/CeSd68711g1LN6HlPaqJ9ererHYipvbyyaRcWtJ+8oncU8XXQfzWm5vaNye5or96onVTMTU32lDEAlJgaB2Qjs2C8GsOPWmRkC3wQwgG8Q/EBgRwIYwI5bZ2YIfBPAAL5B8LM3gV2nxwB23TxzQ+AXgdAAMs8Po2l/zev+N+rVFf4KRNqK+K+y8r+j1ZTNFgUzDFRLmbxKq2pWxUIDqCpMXghA4H0CGMD7O6CDlwnsXB4D2Hn7zL49AQxg+/8LAGBnAhjAzttn9u0JYADb/19gbwC7T/9/AAAA//+7qj12AAAABklEQVQDAGLepKXMjWJWAAAAAElFTkSuQmCC"
+                /><span class="share-invite-qr-caption"
+                  >Scan or tap to open invitation link</span
+                ></a
+              >
+              <div class="share-invite-network" aria-hidden="true">
+                <span class="share-network-link left"></span
+                ><span class="share-network-link right"></span
+                ><span class="share-network-link bottom"></span>
+                <div class="share-network-node left">
+                  <span class="share-network-coin">AU</span>
+                </div>
+                <div class="share-network-node right">
+                  <span class="share-network-coin">RX</span>
+                </div>
+                <div class="share-network-node bottom">
+                  <span class="share-network-coin"></span>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="share-poster-actions">
+            <button type="button" class="share-poster-button">
+              Download / Share Poster
+            </button>
+          </section>
+          <section class="share-invite-sheet">
+            <article class="share-invite-info-card with-action">
+              <div>
+                <span>My Invitation Code</span><strong>C5BIU8SUL000</strong>
+              </div>
+              <button type="button" class="share-invite-copy-button">
+                Copy
+              </button>
+            </article>
+            <article class="share-invite-info-card with-action">
+              <div>
+                <span>My Invitation Link</span
+                ><strong class="share-invite-link-value"
+                  >https://bossk.exchange/register?code=C5BIU8SUL000</strong
+                >
+              </div>
+              <button type="button" class="share-invite-copy-button">
+                Copy
+              </button>
+            </article>
+            <article class="share-invite-info-card">
+              <span>Team Size</span><strong>4</strong>
+            </article>
+            <article class="share-invite-info-card">
+              <span>Invitation Income</span><strong>0</strong>
+            </article>
+          </section>
+        </div>
+        <nav class="bottom-nav nav-count-4" aria-label="Primary navigation">
+          <a class="nav-item" href="./index.html" data-discover="true"
+            ><svg
+              viewBox="0 0 24 24"
+              class="ui-icon icon-home"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M4 11l8-7 8 7v9H4z"></path></svg
+            ><span>Home</span></a
+          ><a class="nav-item" href="./markets.html" data-discover="true"
+            ><svg
+              viewBox="0 0 24 24"
+              class="ui-icon icon-markets"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M5 17.5l4.2-4.5 3.2 2.7 5.6-7.2"></path>
+              <path d="M15.7 8.5H18v2.3"></path></svg
+            ><span>Markets</span></a
+          ><a class="nav-item" href="./futures.html" data-discover="true"
+            ><svg
+              viewBox="0 0 24 24"
+              class="ui-icon icon-futures"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M5.5 8.5h9"></path>
+              <path d="M11.5 5.5l3 3-3 3"></path>
+              <path d="M18.5 15.5h-9"></path>
+              <path d="M12.5 12.5l-3 3 3 3"></path></svg
+            ><span>Trade</span></a
+          ><a class="nav-item" href="./assets.html" data-discover="true"
+            ><svg
+              viewBox="0 0 24 24"
+              class="ui-icon icon-assets"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path
+                d="M4.5 8.5h13a2 2 0 012 2v7a2 2 0 01-2 2h-13a2 2 0 01-2-2v-7a2 2 0 012-2z"
+              ></path>
+              <path d="M4.5 10.5h13"></path>
+              <path d="M14.5 14h3"></path>
+              <path d="M7 8.5V7a1.5 1.5 0 011.5-1.5h7"></path></svg
+            ><span>Assets</span></a
+          >
+        </nav>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Mobile-first crypto exchange web application with centralized market and chart configuration."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Sora:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>AURX Exchange Transfer</title>
+    <link rel="stylesheet" href="./assets/common.css" />
+    <link rel="stylesheet" href="./assets/pages/transfer.css" />
+    <script defer src="./assets/common.js"></script>
+    <script defer src="./assets/pages/transfer.js"></script>
+  </head>
+  <body data-static-route="/transfer" data-page="transfer">
+    <div id="root">
+      <div class="app-shell">
+        <div class="screen no-bottom-nav transfer-screen">
+          <header class="page-title-row">
+            <div class="page-title-side left">
+              <button type="button" class="icon-button ghost">
+                <svg
+                  viewBox="0 0 24 24"
+                  class="ui-icon icon-back"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M15 6l-6 6 6 6"></path>
+                </svg>
+              </button>
+            </div>
+            <h1>Transfer</h1>
+            <div class="page-title-side right">
+              <button type="button" class="icon-button ghost">
+                <svg
+                  viewBox="0 0 24 24"
+                  class="ui-icon icon-record"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M7 5h10v14H7zM9 2h6M9 19h6M17 8h3M17 12h3M17 16h3"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </header>
+          <section class="transfer-panel">
+            <div class="transfer-field-block">
+              <label class="transfer-field-label" for="transfer-symbol"
+                >Select Currency</label
+              >
+              <div class="transfer-select-shell token">
+                <span
+                  class="transfer-token-mark transfer-token-usdt"
+                  aria-hidden="true"
+                  >T</span
+                ><select id="transfer-symbol">
+                  <option value="USDT">USDT</option>
+                  <option value="BTC">BTC</option>
+                  <option value="ETH">ETH</option>
+                  <option value="USDC">USDC</option>
+                  <option value="DAI">DAI</option>
+                  <option value="SHIB">SHIB</option>
+                  <option value="LINK">LINK</option>
+                  <option value="XRP">XRP</option></select
+                ><svg
+                  viewBox="0 0 24 24"
+                  class="ui-icon icon-chevron-down"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M6 9l6 6 6-6"></path>
+                </svg>
+              </div>
+              <p class="transfer-warning-copy">
+                There Are Currently No Assets Available, Please Choose Another
+              </p>
+            </div>
+            <div class="transfer-wallet-stage">
+              <div class="transfer-wallet-block">
+                <label class="transfer-field-label" for="transfer-from"
+                  >Wallet</label
+                >
+                <div class="transfer-select-shell wallet">
+                  <span class="transfer-wallet-icon down"
+                    ><svg
+                      viewBox="0 0 24 24"
+                      class="ui-icon icon-withdraw"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    ></svg></span
+                  ><span class="transfer-wallet-prefix">From</span
+                  ><select id="transfer-from">
+                    <option value="Exchange">Exchange</option>
+                    <option value="Trade">Trade</option>
+                    <option value="Perpetual">Perpetual</option></select
+                  ><svg
+                    viewBox="0 0 24 24"
+                    class="ui-icon icon-chevron-down"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M6 9l6 6 6-6"></path>
+                  </svg>
+                </div>
+                <div class="transfer-select-shell wallet secondary">
+                  <span class="transfer-wallet-icon up"
+                    ><svg
+                      viewBox="0 0 24 24"
+                      class="ui-icon icon-deposit"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path d="M12 5v10M8 9l4-4 4 4M6 17h12"></path></svg></span
+                  ><span class="transfer-wallet-prefix">To</span
+                  ><select id="transfer-to">
+                    <option value="Exchange">Exchange</option>
+                    <option value="Trade">Trade</option>
+                    <option value="Perpetual">Perpetual</option></select
+                  ><svg
+                    viewBox="0 0 24 24"
+                    class="ui-icon icon-chevron-down"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M6 9l6 6 6-6"></path>
+                  </svg>
+                </div>
+              </div>
+              <button
+                type="button"
+                class="transfer-swap-button"
+                aria-label="Swap transfer direction"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  class="ui-icon icon-transfer"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M6 8h12M6 16h12M15 5l3 3-3 3M9 13l-3 3 3 3"></path>
+                </svg>
+              </button>
+            </div>
+            <div class="transfer-field-block">
+              <label class="transfer-field-label" for="transfer-amount"
+                >Quantity</label
+              >
+              <div class="transfer-amount-shell">
+                <input
+                  id="transfer-amount"
+                  inputmode="decimal"
+                  placeholder=""
+                  type="number"
+                  value=""
+                /><button type="button">Maximum</button>
+              </div>
+              <p class="transfer-balance-copy">Available: 0.00 USDT</p>
+            </div>
+            <button type="button" class="transfer-submit-button">
+              Transfer
+            </button>
+          </section>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

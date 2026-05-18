@@ -1,0 +1,3 @@
+/* Page-specific admin overrides for index. */
+body[data-admin-page="index"] {
+}

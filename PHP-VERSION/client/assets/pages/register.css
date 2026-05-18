@@ -1,0 +1,3 @@
+/* Page-specific overrides for register. */
+body[data-page="register"] {
+}

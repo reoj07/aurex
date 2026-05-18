@@ -1,0 +1,282 @@
+<?php
+session_start();
+
+$error = '';
+$login_type = $_POST['login_type'] ?? 'mobile';
+
+if (isset($_POST['login'])) {
+
+    $identifier = trim($_POST['identifier'] ?? '');
+    $password   = trim($_POST['password'] ?? '');
+    $login_type = $_POST['login_type'] ?? 'mobile';
+
+    if ($identifier == '' || $password == '') {
+        $error = 'Please enter your login details.';
+    } else {
+
+        if ($login_type == 'email') {
+            // EMAIL LOGIN
+            // Example:
+            // SELECT * FROM users WHERE email='$identifier'
+        } else {
+            // MOBILE LOGIN
+            // Example:
+            // SELECT * FROM users WHERE mobile='$identifier'
+        }
+
+        // TODO:
+        // Verify password
+        // Redirect if success
+        // header("Location: home.php");
+        // exit;
+    }
+}
+?>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Mobile-first crypto exchange web application with centralized market and chart configuration."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Sora:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+    <title>AURX Exchange</title>
+    <link rel="stylesheet" href="assets/common.css" />
+    <link rel="stylesheet" href="assets/pages/index.css" />
+    <script defer src="assets/common.js"></script>
+    <script defer src="assets/pages/index.js"></script>
+  </head>
+  <body data-static-route="/" data-page="index">
+    <div id="root">
+      <div class="app-shell">
+        <div class="screen home-screen">
+          <header class="home-top-nav">
+            <div class="home-brand-lockup">
+              <div class="home-app-icon" aria-hidden="true">
+                <img
+                  alt=""
+                  src="assets/img/icon.png"
+                />
+              </div>
+              <div class="home-brand-copy">
+                <strong>AURX</strong><span>EXCHANGE</span>
+              </div>
+            </div>
+              <a
+                href="profile.php"
+              class="banner-profile top-nav-profile"
+                aria-label="Open profile page"
+                title="Profile"
+              ></a>
+          </header>
+          <section class="home-banner">
+            <div class="banner-grid"></div>
+            <div class="banner-copy">
+              <p class="banner-kicker">AI-Powered Trading</p>
+              <h1>Elevating Investment Efficiency</h1>
+              <strong>Technology Empowering Finance</strong>
+              <div class="banner-strip">Pioneering the Digital Asset Era</div>
+            </div>
+            <div class="banner-dots">
+              <span class="active"></span><span></span>
+            </div>
+          </section>
+          <section class="announcement-row">
+            <svg
+              viewBox="0 0 24 24"
+              class="ui-icon icon-announcement"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M5 10h4l5-3v10l-5-3H5zM14 14l2 4"></path></svg
+            ><span>THIS IS A TEST</span
+            ><svg
+              viewBox="0 0 24 24"
+              class="ui-icon icon-chevron-right"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M9 6l6 6-6 6"></path>
+            </svg>
+          </section>
+          <section class="quick-actions-grid">
+            <a
+              class="action-shortcut"
+              href="./withdraw.html"
+              data-discover="true"
+              ><span class="action-circle"
+                ><i class="bi bi-currency-exchange" aria-hidden="true"></i></span
+              ><span>Withdrawal</span></a
+            ><a
+              class="action-shortcut"
+              href="deposit_crypto.php"
+              data-discover="true"
+              ><span class="action-circle"
+                ><i class="bi bi-upload" aria-hidden="true"></i></span
+              ><span>Deposit</span></a
+            ><a class="action-shortcut" href="./share.html" data-discover="true"
+              ><span class="action-circle"
+                ><i class="bi bi-person-plus" aria-hidden="true"></i></span
+              ><span>Invite</span></a
+            ><a
+              class="action-shortcut"
+              href="./support.html"
+              data-discover="true"
+              ><span class="action-circle"
+                ><i class="bi bi-question-circle" aria-hidden="true"></i></span
+              ><span>Support</span></a
+            >
+          </section>
+          <a
+            class="buy-coins-banner buy-coins-banner-link"
+            href="./futures.html"
+            data-discover="true"
+            ><div>
+              <strong>Easy Follow Trade</strong>
+              <p>Safe and convenient</p>
+            </div>
+            <span class="round-cta" aria-hidden="true"
+              ><svg
+                viewBox="0 0 24 24"
+                class="ui-icon icon-arrow-right"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M6 12h12M13 7l5 5-5 5"></path></svg></span
+          ></a>
+          <section
+            class="table-head compact-head live-table-head home-market-head"
+          >
+            <span>Pair</span><span>Price</span>
+            <div class="table-head-status">
+              <div class="live-status-indicator compact live">
+                <span class="live-status-dot" aria-hidden="true"></span
+                ><span>LIVE 03:43:04</span>
+              </div>
+              <span class="table-head-label">24-Hour Change</span>
+            </div>
+          </section>
+          <section class="market-list home-list">
+            <article class="price-row home-price-row positive-row">
+              <div class="price-row-left home-price-row-left">
+                <div><strong>XPDUSD</strong></div>
+              </div>
+              <div class="price-row-price home-price-row-price">1434.000</div>
+              <div class="change-chip home-change-chip positive">+1.24%</div>
+            </article>
+            <article class="price-row home-price-row positive-row">
+              <div class="price-row-left home-price-row-left">
+                <div><strong>XAGUSD</strong></div>
+              </div>
+              <div class="price-row-price home-price-row-price">76.092</div>
+              <div class="change-chip home-change-chip positive">+0.22%</div>
+            </article>
+            <article class="price-row home-price-row positive-row">
+              <div class="price-row-left home-price-row-left">
+                <div><strong>XPTUSD</strong></div>
+              </div>
+              <div class="price-row-price home-price-row-price">1989.000</div>
+              <div class="change-chip home-change-chip positive">+0.53%</div>
+            </article>
+            <article class="price-row home-price-row negative-row">
+              <div class="price-row-left home-price-row-left">
+                <div><strong>SHIBUSDT</strong></div>
+              </div>
+              <div class="price-row-price home-price-row-price">0.000006</div>
+              <div class="change-chip home-change-chip negative">-0.48%</div>
+            </article>
+            <article class="price-row home-price-row negative-row">
+              <div class="price-row-left home-price-row-left">
+                <div><strong>XAUUSD</strong></div>
+              </div>
+              <div class="price-row-price home-price-row-price">4541.200</div>
+              <div class="change-chip home-change-chip negative">-0.19%</div>
+            </article>
+            <article class="price-row home-price-row negative-row">
+              <div class="price-row-left home-price-row-left">
+                <div><strong>CHFUSD</strong></div>
+              </div>
+              <div class="price-row-price home-price-row-price">1.271</div>
+              <div class="change-chip home-change-chip negative">-0.12%</div>
+            </article>
+            <article class="price-row home-price-row negative-row">
+              <div class="price-row-left home-price-row-left">
+                <div><strong>BCHUSDT</strong></div>
+              </div>
+              <div class="price-row-price home-price-row-price">446.470</div>
+              <div class="change-chip home-change-chip negative">-0.90%</div>
+            </article>
+            <article class="price-row home-price-row negative-row">
+              <div class="price-row-left home-price-row-left">
+                <div><strong>LTCUSDT</strong></div>
+              </div>
+              <div class="price-row-price home-price-row-price">55.243</div>
+              <div class="change-chip home-change-chip negative">-0.29%</div>
+            </article>
+            <article class="price-row home-price-row positive-row">
+              <div class="price-row-left home-price-row-left">
+                <div><strong>TRXUSDT</strong></div>
+              </div>
+              <div class="price-row-price home-price-row-price">0.331480</div>
+              <div class="change-chip home-change-chip positive">+1.39%</div>
+            </article>
+            <article class="price-row home-price-row positive-row">
+              <div class="price-row-left home-price-row-left">
+                <div><strong>XRPUSDT</strong></div>
+              </div>
+              <div class="price-row-price home-price-row-price">1.393</div>
+              <div class="change-chip home-change-chip positive">+0.52%</div>
+            </article>
+            <article class="price-row home-price-row positive-row">
+              <div class="price-row-left home-price-row-left">
+                <div><strong>BTCUSDT</strong></div>
+              </div>
+              <div class="price-row-price home-price-row-price">78462.210</div>
+              <div class="change-chip home-change-chip positive">+0.30%</div>
+            </article>
+            <article class="price-row home-price-row positive-row">
+              <div class="price-row-left home-price-row-left">
+                <div><strong>ETHUSDT</strong></div>
+              </div>
+              <div class="price-row-price home-price-row-price">2311.440</div>
+              <div class="change-chip home-change-chip positive">+0.69%</div>
+            </article>
+            <article class="price-row home-price-row positive-row">
+              <div class="price-row-left home-price-row-left">
+                <div><strong>DOGEUSDT</strong></div>
+              </div>
+              <div class="price-row-price home-price-row-price">0.108630</div>
+              <div class="change-chip home-change-chip positive">+0.14%</div>
+            </article>
+          </section>
+        </div>
+<!-- ----------------------Bottom menu----------------------------------------- -->
+<!-- BOTTOM NAV -->
+<?php require'bottom_menu.php'; ?>
+
+<!-- ----------------------Bottom menu----------------------------------------- -->
+      </div>
+    </div>
+  </body>
+</html>

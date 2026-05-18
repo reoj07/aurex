@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Mobile-first crypto exchange web application with centralized market and chart configuration."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Sora:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>AURX Exchange Register</title>
+    <link rel="stylesheet" href="./assets/common.css" />
+    <link rel="stylesheet" href="./assets/pages/register.css" />
+    <script defer src="./assets/common.js"></script>
+    <script defer src="./assets/pages/register.js"></script>
+  </head>
+  <body data-static-route="/register" data-page="register">
+    <div id="root">
+      <div class="app-shell">
+        <div class="screen no-bottom-nav login-screen register-screen">
+          <div class="login-layout register-layout">
+            <header class="login-top-row">
+              <button type="button" class="login-back-button" aria-label="Back">
+                <svg
+                  viewBox="0 0 24 24"
+                  class="ui-icon icon-back"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M15 6l-6 6 6 6"></path>
+                </svg></button
+              ><button type="button" class="login-language-button">
+                English
+              </button>
+            </header>
+            <section class="login-hero-block register-hero-block">
+              <h1>Register</h1>
+            </section>
+            <div
+              class="login-mode-tabs"
+              role="tablist"
+              aria-label="Registration method"
+            >
+              <button
+                type="button"
+                role="tab"
+                class="login-mode-tab active"
+                aria-selected="true"
+              >
+                Email</button
+              ><button
+                type="button"
+                role="tab"
+                class="login-mode-tab"
+                aria-selected="false"
+              >
+                Mobile number
+              </button>
+            </div>
+            <form class="login-form register-form">
+              <label class="login-field"
+                ><input
+                  inputmode="email"
+                  placeholder="Please enter your email address"
+                  aria-label="Email"
+                  type="email"
+                  value="" /></label
+              ><label class="login-field register-code-field"
+                ><input
+                  inputmode="numeric"
+                  placeholder="Please enter verification code"
+                  aria-label="Verification code"
+                  type="text"
+                  value=""
+                /><button type="button" class="register-obtain-button">
+                  Obtain
+                </button></label
+              ><label class="login-field"
+                ><input
+                  placeholder="Please enter your password"
+                  aria-label="Password"
+                  type="password"
+                  value="" /></label
+              ><label class="login-field"
+                ><input
+                  placeholder="Please enter your password again"
+                  aria-label="Confirm password"
+                  type="password"
+                  value="" /></label
+              ><label class="login-field"
+                ><input
+                  placeholder="Invite code"
+                  aria-label="Invite code"
+                  type="text"
+                  value="" /></label
+              ><button
+                type="submit"
+                class="login-primary-action register-primary-action"
+              >
+                Register
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

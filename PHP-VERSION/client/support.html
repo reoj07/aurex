@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Mobile-first crypto exchange web application with centralized market and chart configuration."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Sora:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>AURX Exchange Support</title>
+    <link rel="stylesheet" href="./assets/common.css" />
+    <link rel="stylesheet" href="./assets/pages/support.css" />
+    <script defer src="./assets/common.js"></script>
+    <script defer src="./assets/pages/support.js"></script>
+  </head>
+  <body data-static-route="/support" data-page="support">
+    <div id="root">
+      <div class="app-shell">
+        <div class="screen no-bottom-nav contact-chat-screen">
+          <header class="page-title-row">
+            <div class="page-title-side left">
+              <button type="button" class="icon-button ghost">
+                <svg
+                  viewBox="0 0 24 24"
+                  class="ui-icon icon-back"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M15 6l-6 6 6 6"></path>
+                </svg>
+              </button>
+            </div>
+            <h1>Contact Us</h1>
+            <div class="page-title-side right"></div>
+          </header>
+          <section
+            class="contact-chat-thread"
+            aria-label="Support conversation"
+          >
+            <article class="contact-chat-bubble support">
+              <p>
+                Dear distinguished guests, welcome to DSJEX [7*24] online
+                customer service. We are happy to serve you. How can I help you?
+              </p>
+            </article>
+          </section>
+          <section class="contact-chat-composer">
+            <button
+              type="button"
+              class="contact-chat-plus"
+              aria-label="Add attachment"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                class="ui-icon icon-followup-add"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path
+                  d="M12 7v10M7 12h10M5 12a7 7 0 1014 0 7 7 0 10-14 0z"
+                ></path>
+              </svg></button
+            ><label class="contact-chat-input-wrap"
+              ><input
+                placeholder="Type your message"
+                aria-label="Message"
+                type="text"
+                value="" /></label
+            ><button type="button" class="contact-chat-send">Send</button>
+          </section>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Mobile-first crypto exchange web application with centralized market and chart configuration."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Sora:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>AURX Exchange P2P Deposit</title>
+    <link rel="stylesheet" href="./assets/common.css" />
+    <link rel="stylesheet" href="./assets/pages/deposit-p2p.css" />
+    <script defer src="./assets/common.js"></script>
+    <script defer src="./assets/pages/deposit-p2p.js"></script>
+  </head>
+  <body data-static-route="/deposit/p2p" data-page="deposit-p2p">
+    <div id="root">
+      <div class="app-shell">
+        <div class="screen no-bottom-nav p2p-screen p2p-market-screen">
+          <header class="p2p-market-header">
+            <button type="button" class="icon-button ghost" aria-label="Back">
+              <svg
+                viewBox="0 0 24 24"
+                class="ui-icon icon-back"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M15 6l-6 6 6 6"></path>
+              </svg>
+            </button>
+            <div class="p2p-market-top-tabs">
+              <button type="button">Express</button
+              ><button type="button" class="active">P2P</button
+              ><button type="button">Block Trade</button>
+            </div>
+            <button type="button" class="p2p-market-currency-chip">
+              PHP<svg
+                viewBox="0 0 24 24"
+                class="ui-icon icon-chevron-down"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M6 9l6 6 6-6"></path>
+              </svg>
+            </button>
+          </header>
+          <section class="p2p-market-mode-row">
+            <div class="p2p-market-mode-toggle">
+              <button type="button" class="active">Buy</button
+              ><button type="button">Sell</button>
+            </div>
+            <button
+              type="button"
+              class="icon-button ghost"
+              aria-label="Notifications"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                class="ui-icon icon-announcement"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M5 10h4l5-3v10l-5-3H5zM14 14l2 4"></path>
+              </svg>
+            </button>
+          </section>
+          <section class="p2p-market-filter-row">
+            <button type="button" class="p2p-market-filter-chip">
+              <span class="token-badge" style="--token-color: #30c59b">U</span
+              ><span>USDT</span
+              ><svg
+                viewBox="0 0 24 24"
+                class="ui-icon icon-chevron-down"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M6 9l6 6 6-6"></path>
+              </svg></button
+            ><button type="button" class="p2p-market-filter-chip">
+              <span>Amount</span
+              ><svg
+                viewBox="0 0 24 24"
+                class="ui-icon icon-chevron-down"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M6 9l6 6 6-6"></path>
+              </svg></button
+            ><button type="button" class="p2p-market-filter-chip">
+              <span>Payment</span
+              ><svg
+                viewBox="0 0 24 24"
+                class="ui-icon icon-chevron-down"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M6 9l6 6 6-6"></path>
+              </svg></button
+            ><button
+              type="button"
+              class="icon-button ghost p2p-market-filter-action"
+              aria-label="Filters"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                class="ui-icon icon-sort"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M12 6l3 3H9l3-3zm0 12l-3-3h6l-3 3z"></path>
+              </svg>
+            </button>
+          </section>
+          <section class="p2p-offer-list" aria-label="P2P seller list">
+            <article class="p2p-offer-card">
+              <div class="p2p-offer-head">
+                <div class="p2p-offer-merchant-line">
+                  <div class="p2p-offer-avatar-wrap">
+                    <div class="p2p-offer-avatar">U</div>
+                    <span
+                      class="p2p-offer-online-dot"
+                      aria-hidden="true"
+                    ></span>
+                  </div>
+                  <div>
+                    <div class="p2p-offer-name-row">
+                      <strong>User-416f1</strong
+                      ><span
+                        class="p2p-offer-badge gold"
+                        aria-hidden="true"
+                      ></span>
+                    </div>
+                    <p>Trade: 21 Trades (100.00%) | 100.00%</p>
+                  </div>
+                </div>
+              </div>
+              <div class="p2p-offer-body">
+                <div>
+                  <div class="p2p-offer-price">₱ 59.87/USDT</div>
+                  <p>Limit 5,000 PHP - 33,000 PHP</p>
+                  <p>Available 1262.13 USDT</p>
+                </div>
+                <div class="p2p-offer-side">
+                  <strong>Bank Transfer</strong><span>15 min</span
+                  ><button type="button" class="p2p-offer-buy-button">
+                    Buy
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="p2p-offer-card">
+              <div class="p2p-offer-head">
+                <div class="p2p-offer-merchant-line">
+                  <div class="p2p-offer-avatar-wrap">
+                    <div class="p2p-offer-avatar">U</div>
+                    <span
+                      class="p2p-offer-online-dot"
+                      aria-hidden="true"
+                    ></span>
+                  </div>
+                  <div>
+                    <div class="p2p-offer-name-row">
+                      <strong>User-c6f49</strong
+                      ><span
+                        class="p2p-offer-badge silver"
+                        aria-hidden="true"
+                      ></span>
+                    </div>
+                    <p>Trade: 698 Trades (100.00%) | 72.73%</p>
+                  </div>
+                </div>
+              </div>
+              <div class="p2p-offer-body">
+                <div>
+                  <div class="p2p-offer-price">₱ 59.91/USDT</div>
+                  <p>Limit 5,000 PHP - 23,000 PHP</p>
+                  <p>Available 511.70 USDT</p>
+                </div>
+                <div class="p2p-offer-side">
+                  <strong>Bank Transfer</strong><span>15 min</span
+                  ><button type="button" class="p2p-offer-buy-button">
+                    Buy
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="p2p-offer-card">
+              <div class="p2p-offer-head">
+                <div class="p2p-offer-merchant-line">
+                  <div class="p2p-offer-avatar-wrap">
+                    <div class="p2p-offer-avatar">X</div>
+                    <span
+                      class="p2p-offer-online-dot"
+                      aria-hidden="true"
+                    ></span>
+                  </div>
+                  <div>
+                    <div class="p2p-offer-name-row">
+                      <strong>xm631975</strong
+                      ><span
+                        class="p2p-offer-badge gold"
+                        aria-hidden="true"
+                      ></span>
+                    </div>
+                    <p>Trade: 652 Trades (100.00%) | 87.22%</p>
+                  </div>
+                </div>
+              </div>
+              <div class="p2p-offer-body">
+                <div>
+                  <div class="p2p-offer-price">₱ 59.92/USDT</div>
+                  <p>Limit 1,000 PHP - 12,956 PHP</p>
+                  <p>Available 216.23 USDT</p>
+                </div>
+                <div class="p2p-offer-side">
+                  <strong>Bank Transfer</strong><span>15 min</span
+                  ><button type="button" class="p2p-offer-buy-button">
+                    Buy
+                  </button>
+                </div>
+              </div>
+            </article>
+          </section>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

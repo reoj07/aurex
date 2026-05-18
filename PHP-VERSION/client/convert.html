@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Mobile-first crypto exchange web application with centralized market and chart configuration."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Sora:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>AURX Exchange Convert</title>
+    <link rel="stylesheet" href="./assets/common.css" />
+    <link rel="stylesheet" href="./assets/pages/convert.css" />
+    <script defer src="./assets/common.js"></script>
+    <script defer src="./assets/pages/convert.js"></script>
+  </head>
+  <body data-static-route="/convert" data-page="convert">
+    <div id="root">
+      <div class="app-shell">
+        <div class="screen no-bottom-nav convert-screen">
+          <header class="page-title-row">
+            <div class="page-title-side left">
+              <button type="button" class="icon-button ghost">
+                <svg
+                  viewBox="0 0 24 24"
+                  class="ui-icon icon-back"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M15 6l-6 6 6 6"></path>
+                </svg>
+              </button>
+            </div>
+            <h1>Convert</h1>
+            <div class="page-title-side right">
+              <button type="button" class="icon-button ghost">
+                <svg
+                  viewBox="0 0 24 24"
+                  class="ui-icon icon-record"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M7 5h10v14H7zM9 2h6M9 19h6M17 8h3M17 12h3M17 16h3"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </header>
+          <section class="convert-panel convert-panel-consume">
+            <div class="convert-panel-head">
+              <span>Consume</span><span>Available: 0 USDT</span>
+            </div>
+            <div class="convert-panel-body">
+              <div class="convert-token-block">
+                <div class="convert-token-row">
+                  <span class="token-badge" style="--token-color: #30c59b"
+                    >U</span
+                  ><select>
+                    <option>USDT</option>
+                    <option>BTC</option>
+                    <option>ETH</option>
+                    <option>USDC</option>
+                    <option>DAI</option>
+                    <option>SHIB</option>
+                    <option>LINK</option>
+                    <option>XRP</option></select
+                  ><svg
+                    viewBox="0 0 24 24"
+                    class="ui-icon icon-chevron-down"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M6 9l6 6 6-6"></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="convert-amount-block">
+                <input
+                  class="convert-amount-input"
+                  step="0.000001"
+                  placeholder="Enter quantity"
+                  type="number"
+                  value=""
+                /><button type="button" class="convert-max-button">Max</button>
+              </div>
+            </div>
+          </section>
+          <button
+            type="button"
+            class="convert-swap-button"
+            aria-label="Swap conversion direction"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              class="ui-icon icon-swap-vertical"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M12 4v14M8 8l4-4 4 4M8 16l4 4 4-4"></path>
+            </svg>
+          </button>
+          <section class="convert-panel convert-panel-get">
+            <div class="convert-panel-head">
+              <span>Get</span
+              ><span class="convert-slippage-label"
+                >Slippage
+                <svg
+                  viewBox="0 0 24 24"
+                  class="ui-icon icon-info-small"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M12 15v-4M12 8h.01M5 12a7 7 0 1014 0A7 7 0 005 12z"
+                  ></path></svg
+              ></span>
+            </div>
+            <div class="convert-panel-body">
+              <div class="convert-token-block">
+                <div class="convert-token-row">
+                  <span class="token-badge" style="--token-color: #f7931a"
+                    >B</span
+                  ><select>
+                    <option>USDT</option>
+                    <option>BTC</option>
+                    <option>ETH</option>
+                    <option>USDC</option>
+                    <option>DAI</option>
+                    <option>SHIB</option>
+                    <option>LINK</option>
+                    <option>XRP</option></select
+                  ><svg
+                    viewBox="0 0 24 24"
+                    class="ui-icon icon-chevron-down"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M6 9l6 6 6-6"></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="convert-amount-block convert-amount-block-output">
+                <strong>0</strong>
+              </div>
+            </div>
+          </section>
+          <p class="exchange-rate-copy convert-rate-copy">
+            Current exchange price: <strong>1 BTC ≈ 78369.9 USDT</strong>
+          </p>
+          <button type="button" class="primary-action convert-submit-button">
+            Exchange
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

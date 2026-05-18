@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Mobile-first crypto exchange web application with centralized market and chart configuration."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Sora:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>AURX Exchange PHP Deposit</title>
+    <link rel="stylesheet" href="./assets/common.css" />
+    <link rel="stylesheet" href="./assets/pages/deposit-php.css" />
+    <script defer src="./assets/common.js"></script>
+    <script defer src="./assets/pages/deposit-php.js"></script>
+  </head>
+  <body data-static-route="/deposit/php" data-page="deposit-php">
+    <div id="root">
+      <div class="app-shell">
+        <div class="screen no-bottom-nav php-deposit-screen">
+          <header class="php-deposit-header">
+            <button type="button" class="icon-button ghost" aria-label="Back">
+              <svg
+                viewBox="0 0 24 24"
+                class="ui-icon icon-back"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M15 6l-6 6 6 6"></path>
+              </svg></button
+            ><button
+              type="button"
+              class="icon-button ghost"
+              aria-label="Payment records"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                class="ui-icon icon-record"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path
+                  d="M7 5h10v14H7zM9 2h6M9 19h6M17 8h3M17 12h3M17 16h3"
+                ></path>
+              </svg>
+            </button>
+          </header>
+          <section class="php-mode-switch">
+            <button type="button" class="active">Buy</button
+            ><button type="button" class="">Sell</button>
+          </section>
+          <section class="php-amount-stage">
+            <div class="php-amount-row">
+              <strong>0</strong
+              ><button type="button" class="php-currency-chip">
+                PHP<svg
+                  viewBox="0 0 24 24"
+                  class="ui-icon icon-chevron-down"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M6 9l6 6 6-6"></path>
+                </svg>
+              </button>
+            </div>
+            <p class="php-converted-line">≈ 0.00 USDT</p>
+            <p class="php-balance-line">Account balance: 0.00 USDT</p>
+          </section>
+          <button type="button" class="php-selection-card">
+            <div class="php-selection-icon token">
+              <span class="token-badge" style="--token-color: #30c59b">U</span>
+            </div>
+            <div class="php-selection-copy">
+              <strong>Buy</strong><span>USDT | 3.81% APR</span>
+            </div>
+            <svg
+              viewBox="0 0 24 24"
+              class="ui-icon icon-chevron-right"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M9 6l6 6-6 6"></path>
+            </svg></button
+          ><button type="button" class="php-selection-card muted">
+            <div class="php-selection-icon method">
+              <svg
+                viewBox="0 0 24 24"
+                class="ui-icon icon-deposit-method-fiat"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M6 8h12l1 11H5zM9 8V6a3 3 0 016 0v2M9.5 13.5h5"></path>
+              </svg>
+            </div>
+            <div class="php-selection-copy">
+              <strong>Payment method</strong><span>Bank Transfer</span>
+            </div>
+            <svg
+              viewBox="0 0 24 24"
+              class="ui-icon icon-chevron-right"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M9 6l6 6-6 6"></path>
+            </svg>
+          </button>
+          <section class="php-quick-amount-row">
+            <button type="button">Min</button
+            ><button type="button" class="active">₱3,000</button
+            ><button type="button">Max</button>
+          </section>
+          <section class="php-keypad-grid" aria-label="PHP amount keypad">
+            <button type="button">1</button><button type="button">2</button
+            ><button type="button">3</button><button type="button">4</button
+            ><button type="button">5</button><button type="button">6</button
+            ><button type="button">7</button><button type="button">8</button
+            ><button type="button">9</button><button type="button">.</button
+            ><button type="button">0</button
+            ><button
+              type="button"
+              class="php-keypad-backspace"
+              aria-label="Delete last digit"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                class="ui-icon icon-close"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M7 7l10 10M17 7L7 17"></path>
+              </svg>
+            </button>
+          </section>
+          <button type="button" class="primary-action php-submit-button">
+            Select Admin To Continue
+          </button>
+          <div class="deposit-method-overlay" role="presentation">
+            <aside
+              class="deposit-method-sheet"
+              role="dialog"
+              aria-modal="true"
+              aria-label="Select payment method"
+            >
+              <button
+                type="button"
+                class="deposit-method-handle"
+                aria-label="Close payment method menu"
+              >
+                <span></span>
+              </button>
+              <div class="deposit-method-sheet-header">
+                <h2>Select Payment Method</h2>
+              </div>
+              <div class="deposit-method-list">
+                <button type="button" class="deposit-method-card active">
+                  <span class="deposit-method-icon-wrap" aria-hidden="true"
+                    ><svg
+                      viewBox="0 0 24 24"
+                      class="ui-icon icon-deposit-method-fiat"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M6 8h12l1 11H5zM9 8V6a3 3 0 016 0v2M9.5 13.5h5"
+                      ></path></svg></span
+                  ><span class="deposit-method-copy"
+                    ><strong>Bank Transfer</strong
+                    ><span
+                      >Transfer from your bank app or online banking
+                      account.</span
+                    ></span
+                  ></button
+                ><button type="button" class="deposit-method-card">
+                  <span class="deposit-method-icon-wrap" aria-hidden="true"
+                    ><svg
+                      viewBox="0 0 24 24"
+                      class="ui-icon icon-record"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M7 5h10v14H7zM9 2h6M9 19h6M17 8h3M17 12h3M17 16h3"
+                      ></path></svg></span
+                  ><span class="deposit-method-copy"
+                    ><strong>Admin</strong
+                    ><span
+                      >Send the payment request to the admin dashboard for
+                      manual approval and funding.</span
+                    ></span
+                  ></button
+                ><button type="button" class="deposit-method-card">
+                  <span class="deposit-method-icon-wrap" aria-hidden="true"
+                    ><svg
+                      viewBox="0 0 24 24"
+                      class="ui-icon icon-deposit-method-fiat"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M6 8h12l1 11H5zM9 8V6a3 3 0 016 0v2M9.5 13.5h5"
+                      ></path></svg></span
+                  ><span class="deposit-method-copy"
+                    ><strong>GCash</strong
+                    ><span
+                      >Use local wallet settlement with verified merchant
+                      instructions.</span
+                    ></span
+                  >
+                </button>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

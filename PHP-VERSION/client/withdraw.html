@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Mobile-first crypto exchange web application with centralized market and chart configuration."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Sora:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>AURX Exchange Withdrawal</title>
+    <link rel="stylesheet" href="./assets/common.css" />
+    <link rel="stylesheet" href="./assets/pages/withdraw.css" />
+    <script defer src="./assets/common.js"></script>
+    <script defer src="./assets/pages/withdraw.js"></script>
+  </head>
+  <body data-static-route="/withdraw" data-page="withdraw">
+    <div id="root">
+      <div class="app-shell">
+        <div class="screen no-bottom-nav">
+          <header class="page-title-row">
+            <div class="page-title-side left">
+              <button type="button" class="icon-button ghost">
+                <svg
+                  viewBox="0 0 24 24"
+                  class="ui-icon icon-back"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M15 6l-6 6 6 6"></path>
+                </svg>
+              </button>
+            </div>
+            <h1>Withdrawal</h1>
+            <div class="page-title-side right">
+              <button type="button" class="icon-button ghost">
+                <svg
+                  viewBox="0 0 24 24"
+                  class="ui-icon icon-record"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M7 5h10v14H7zM9 2h6M9 19h6M17 8h3M17 12h3M17 16h3"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </header>
+          <section class="currency-head cardless-top">
+            <div class="token-select-row static-token">
+              <span class="token-badge" style="--token-color: #30c59b">U</span
+              ><strong>USDT</strong>
+            </div>
+            <button type="button" class="ghost-text inline-action">
+              Select currency<svg
+                viewBox="0 0 24 24"
+                class="ui-icon icon-chevron-right"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M9 6l6 6-6 6"></path>
+              </svg>
+            </button>
+          </section>
+          <section class="form-card">
+            <h2 class="field-label">Withdrawal address</h2>
+            <div class="dark-input with-icon">
+              <input
+                placeholder="Please enter wallet address"
+                type="text"
+                value=""
+              /><button type="button" class="inline-icon">
+                <svg
+                  viewBox="0 0 24 24"
+                  class="ui-icon icon-copy"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M9 9h9v11H9zM6 6h9v2"></path>
+                </svg>
+              </button>
+            </div>
+            <h2 class="field-label">Withdrawal amount</h2>
+            <div class="dark-input with-action">
+              <input placeholder="Enter amount" type="number" value="" /><button
+                type="button"
+              >
+                All
+              </button>
+            </div>
+            <p class="muted-caption">Balance: 0.00USDT</p>
+            <h2 class="field-label">Handling fee</h2>
+            <div class="dark-input static-field">0</div>
+          </section>
+          <section class="form-card notice-card">
+            <h3>Important Notice</h3>
+            <ol>
+              <li>
+                After submitting the withdrawal application, the funds are in a
+                frozen state because the withdrawal is in progress and the funds
+                are temporarily under the custody of the system, which does not
+                mean that you have lost the asset or the asset is abnormal.
+              </li>
+              <li>
+                The account will be received within 24 hours after submitting
+                the withdrawal application. If the account is not received after
+                the estimated time of withdrawal, please consult the online
+                customer service.
+              </li>
+              <li>
+                In order to prevent arbitrage behavior, the transaction volume
+                can be applied for withdrawal after reaching the limit.
+              </li>
+              <li>The withdrawal fee for USDT ETH BTC is 12%!</li>
+            </ol>
+            <button type="button" class="help-link">
+              Encounter problems? feedback immediately</button
+            ><button type="button" class="primary-action">Confirm</button>
+          </section>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

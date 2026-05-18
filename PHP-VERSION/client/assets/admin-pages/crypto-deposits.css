@@ -1,0 +1,3 @@
+/* Page-specific admin overrides for crypto-deposits. */
+body[data-admin-page="crypto-deposits"] {
+}

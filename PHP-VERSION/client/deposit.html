@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Mobile-first crypto exchange web application with centralized market and chart configuration."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Sora:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>AURX Exchange Deposit</title>
+    <link rel="stylesheet" href="./assets/common.css" />
+    <link rel="stylesheet" href="./assets/pages/deposit.css" />
+    <script defer src="./assets/common.js"></script>
+    <script defer src="./assets/pages/deposit.js"></script>
+  </head>
+  <body data-static-route="/deposit" data-page="deposit">
+    <div id="root">
+      <div class="app-shell">
+        <div class="screen no-bottom-nav deposit-picker-screen">
+          <header class="page-title-row">
+            <div class="page-title-side left">
+              <button type="button" class="icon-button ghost">
+                <svg
+                  viewBox="0 0 24 24"
+                  class="ui-icon icon-back"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M15 6l-6 6 6 6"></path>
+                </svg>
+              </button>
+            </div>
+            <h1>Deposit</h1>
+            <div class="page-title-side right">
+              <button type="button" class="icon-button ghost">
+                <svg
+                  viewBox="0 0 24 24"
+                  class="ui-icon icon-record"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M7 5h10v14H7zM9 2h6M9 19h6M17 8h3M17 12h3M17 16h3"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </header>
+          <section class="deposit-picker-stage">
+            <div class="deposit-picker-copy">
+              <span>Select how you want to add funds</span
+              ><strong>Choose a deposit method to continue.</strong>
+            </div>
+          </section>
+          <div class="deposit-method-overlay open" role="presentation">
+            <aside
+              class="deposit-method-sheet open"
+              role="dialog"
+              aria-modal="true"
+              aria-label="Select deposit method"
+            >
+              <button
+                type="button"
+                class="deposit-method-handle"
+                aria-label="Close deposit method menu"
+              >
+                <span></span>
+              </button>
+              <div class="deposit-method-sheet-header">
+                <h2>Select Deposit Method</h2>
+              </div>
+              <div class="deposit-method-list">
+                <button type="button" class="deposit-method-card active">
+                  <span class="deposit-method-icon-wrap" aria-hidden="true"
+                    ><svg
+                      viewBox="0 0 24 24"
+                      class="ui-icon icon-deposit-method-crypto"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M12 4v12M7.5 11.5L12 16l4.5-4.5M6 20h12"
+                      ></path></svg></span
+                  ><span class="deposit-method-copy"
+                    ><strong>Deposit Crypto</strong
+                    ><span
+                      >Deposit crypto from other exchanges or external wallets
+                      to your account.</span
+                    ></span
+                  ></button
+                ><button type="button" class="deposit-method-card">
+                  <span class="deposit-method-icon-wrap" aria-hidden="true"
+                    ><svg
+                      viewBox="0 0 24 24"
+                      class="ui-icon icon-deposit-method-fiat"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M6 8h12l1 11H5zM9 8V6a3 3 0 016 0v2M9.5 13.5h5"
+                      ></path></svg></span
+                  ><span class="deposit-method-copy"
+                    ><strong>Buy with PHP</strong
+                    ><span
+                      >Buy crypto easily via bank transfer, card, and other
+                      local payment methods.</span
+                    ></span
+                  ></button
+                ><button type="button" class="deposit-method-card">
+                  <span class="deposit-method-icon-wrap" aria-hidden="true"
+                    ><svg
+                      viewBox="0 0 24 24"
+                      class="ui-icon icon-deposit-method-p2p"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M8.5 10.5a2 2 0 100-4 2 2 0 000 4zm7 0a2 2 0 100-4 2 2 0 000 4zM5.5 18c.5-2.1 1.9-3.5 4-3.5m5 3.5c-.5-2.1-1.9-3.5-4-3.5M10 15l4-4"
+                      ></path></svg></span
+                  ><span class="deposit-method-copy"
+                    ><strong>P2P Trading</strong
+                    ><span
+                      >Buy directly from users with competitive pricing and
+                      local payment rails.</span
+                    ></span
+                  >
+                </button>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

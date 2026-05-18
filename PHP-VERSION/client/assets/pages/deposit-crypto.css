@@ -1,0 +1,234 @@
+/* Page-specific overrides for deposit-crypto. */
+body[data-page="deposit-crypto"] {
+	background: #070b11;
+}
+
+.crypto-currency-picker .deposit-currency-item {
+	text-decoration: none;
+	display: block;
+}
+
+.crypto-currency-picker .deposit-currency-item strong {
+	color: #fff;
+}
+
+.crypto-currency-picker .icon-button {
+	text-decoration: none;
+}
+
+.crypto-deposit-flow {
+	color: #fff;
+	min-height: 100vh;
+	padding-inline: 14px;
+}
+
+.crypto-title-row {
+	margin-bottom: 16px;
+}
+
+.crypto-title-row .icon-button {
+	text-decoration: none;
+}
+
+.crypto-title-row .icon-button,
+.crypto-title-row .page-title-side {
+	color: #fff;
+}
+
+.crypto-alert {
+	border: 1px solid #ffffff1c;
+	border-radius: 18px;
+	align-items: center;
+	gap: 10px;
+	margin-bottom: 14px;
+	padding: 14px 16px;
+	display: flex;
+}
+
+.crypto-alert i {
+	font-size: 1rem;
+}
+
+.success-alert {
+	background: #1ecf9d18;
+	border-color: #1ecf9d42;
+	color: #baffed;
+}
+
+.error-alert {
+	background: #f4636818;
+	border-color: #f4636842;
+	color: #ffd5d7;
+}
+
+.crypto-card {
+	background: linear-gradient(180deg, #141d2af7 0%, #101722f2 100%);
+	border: 1px solid #ffffff12;
+	border-radius: 24px;
+	box-shadow: 0 18px 38px #00000033;
+}
+
+.crypto-token-row {
+	margin-top: 0;
+}
+
+.crypto-token-row .inline-action {
+	color: #cfd8e4;
+	text-decoration: none;
+}
+
+.crypto-token-row .inline-action i {
+	color: #f1c45e;
+}
+
+.crypto-card > .outline-action {
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+
+.crypto-address {
+	background: #0b1119;
+	border: 1px solid #ffffff0f;
+	border-radius: 16px;
+	min-height: 62px;
+	color: #eef4ff;
+	font-size: 0.92rem;
+	line-height: 1.7;
+	word-break: break-all;
+}
+
+.crypto-copy-feedback {
+	color: #8c97a9;
+	min-height: 1.4em;
+	margin-top: 10px;
+	font-size: 0.9rem;
+	opacity: 0;
+	transition: opacity 0.18s ease;
+}
+
+.crypto-copy-feedback.visible {
+	opacity: 1;
+}
+
+.crypto-copy-feedback.error {
+	color: #ffb7bc;
+}
+
+.crypto-section-copy {
+	color: #c8d2df;
+	text-align: left;
+	margin: 0 0 18px;
+	line-height: 1.8;
+}
+
+.crypto-form-stack {
+	display: grid;
+}
+
+.crypto-field {
+	width: 100%;
+	color: #f4f7fb;
+	font: inherit;
+	background: #0b1119;
+	border: 1px solid #ffffff10;
+	border-radius: 16px;
+	padding: 15px 16px;
+	outline: none;
+}
+
+.crypto-field:focus {
+	border-color: #f1c45e66;
+	box-shadow: 0 0 0 3px #f1c45e14;
+}
+
+.crypto-field::placeholder {
+	color: #74839a;
+}
+
+.crypto-textarea {
+	min-height: 132px;
+	resize: vertical;
+}
+
+.crypto-upload {
+	color: #95a3b8;
+	background: #0d141e;
+	border: 1px dashed #ffffff20;
+	border-radius: 18px;
+	margin-top: 6px;
+	margin-bottom: 6px;
+	padding: 18px 16px;
+	display: grid;
+}
+
+.crypto-upload span {
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	font-size: 0.74rem;
+}
+
+.crypto-upload strong {
+	color: #fff;
+	margin: 12px 0 14px;
+	font-size: 0.98rem;
+}
+
+.crypto-upload input {
+	color: #d9e1eb;
+	font: inherit;
+}
+
+.crypto-empty-state {
+	color: #a9b6c8;
+	text-align: center;
+	margin: 8px 0 0;
+	line-height: 1.8;
+}
+
+.crypto-deposit-flow .detail-group + .detail-group {
+	margin-top: 18px;
+}
+
+.crypto-deposit-flow .detail-group.compact + .detail-group.compact {
+	margin-top: 16px;
+}
+
+.crypto-deposit-flow .detail-group p {
+	color: #d8dee8;
+}
+
+.crypto-deposit-flow .help-link {
+	color: #f7cb67;
+	background: linear-gradient(180deg, #1b2738 0%, #131d2b 100%);
+	border: 1px solid #f1c45e2e;
+	border-radius: 999px;
+	min-width: 78px;
+	height: 36px;
+	padding: 0 16px;
+	font-size: 0.84rem;
+	font-weight: 700;
+	justify-content: center;
+	box-shadow: inset 0 1px #ffffff14, 0 10px 20px #0000001f;
+	transition: transform 0.16s ease, border-color 0.16s ease, background 0.16s ease;
+}
+
+.crypto-deposit-flow .help-link:hover {
+	border-color: #f1c45e57;
+	background: linear-gradient(180deg, #213248 0%, #182334 100%);
+}
+
+.crypto-deposit-flow .help-link:active {
+	transform: scale(0.98);
+}
+
+@media (width <= 420px) {
+	.crypto-deposit-flow {
+		padding-inline: 12px;
+	}
+
+	.crypto-alert {
+		align-items: flex-start;
+	}
+}

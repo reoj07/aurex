@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Mobile-first crypto exchange web application with centralized market and chart configuration."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Sora:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>AURX Exchange Crypto Deposit</title>
+    <link rel="stylesheet" href="./assets/common.css" />
+    <link rel="stylesheet" href="./assets/pages/deposit-crypto.css" />
+    <script defer src="./assets/common.js"></script>
+    <script defer src="./assets/pages/deposit-crypto.js"></script>
+  </head>
+  <body data-static-route="/deposit/crypto" data-page="deposit-crypto">
+    <div id="root">
+      <div class="app-shell">
+        <div class="screen no-bottom-nav deposit-currency-screen">
+          <header class="deposit-currency-header">
+            <h2>Select Currency To Recharge</h2>
+          </header>
+          <section class="deposit-currency-panel">
+            <div class="deposit-currency-list">
+              <button type="button" class="deposit-currency-item">
+                <div class="deposit-currency-item-main">
+                  <span class="token-badge" style="--token-color: #30c59b"
+                    >U</span
+                  ><strong>USDT</strong>
+                </div></button
+              ><button type="button" class="deposit-currency-item">
+                <div class="deposit-currency-item-main">
+                  <span class="token-badge" style="--token-color: #b0b4be"
+                    >E</span
+                  ><strong>ETH</strong>
+                </div></button
+              ><button type="button" class="deposit-currency-item">
+                <div class="deposit-currency-item-main">
+                  <span class="token-badge" style="--token-color: #2775ca"
+                    >U</span
+                  ><strong>USDC</strong>
+                </div>
+              </button>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

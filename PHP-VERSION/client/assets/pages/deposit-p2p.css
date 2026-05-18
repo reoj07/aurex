@@ -1,0 +1,3 @@
+/* Page-specific overrides for deposit-p2p. */
+body[data-page="deposit-p2p"] {
+}
